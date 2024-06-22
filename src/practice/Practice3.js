@@ -1,33 +1,33 @@
-import React from 'react'
-import { Fade } from 'react-reveal';
+import React, { useState,useRef } from 'react'
+import Practice4 from './Practice4';
 
-const Practice3 = () => {
-    
+export default function Practice3() {
+  const [isPlaying ,setIsPlaying] = useState(false);
+  const ref = useRef(null);
+  function handleClick() {
+    const nextIsPlaying = !isPlaying;
+    setIsPlaying(nextIsPlaying)
+
+    if(nextIsPlaying){
+      ref.current.play();
+    }else{
+      ref.current.pause()
+    }
+  }
   return (
     <div>
-        {/* <Fade right>
-        <img src='https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2Fyc3xlbnwwfHwwfHx8MA%3D%3D'/>
-      </Fade>
-      <Fade left>
-        <img src='https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2Fyc3xlbnwwfHwwfHx8MA%3D%3D'/>
-      </Fade>
-      <Fade bottom>
-        <Box color=" chocolate"/>
-      </Fade>
-      <Fade top>
-        <Box color="chartreuse" />
-      </Fade>
-      <Fade left>
-        <Box color="#61dafbaa" />
-      </Fade> */}
-      <Fade cascade damping={0.1}>
-  <p>I enter first...</p>
-  <p>...then comes my turn...</p>
-  <p>...and finally you see me!</p>
-</Fade>
-      
+      <button onClick={handleClick}>{isPlaying?'pause' : 'play'}</button>
+      <video 
+      ref={ref}
+      onPlay={() => setIsPlaying(true)}
+      onPause={() => setIsPlaying(false)}
+      >
+      <source  src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
+          type="video/mp4"/>
+          </video>
+          <Practice4/>
     </div>
   )
 }
 
-export default Practice3
+
