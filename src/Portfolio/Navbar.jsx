@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Fade } from "react-reveal";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -46,6 +47,7 @@ const Navbar = () => {
           id="navbar-default"
         >
           <ul className="font-medium flex flex-col p-4 md:p-0 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 h-13">
+            <Fade top>
             <li>
               <a
                 href="/"
@@ -82,6 +84,7 @@ const Navbar = () => {
                 Contact
               </a>
             </li>
+            </Fade>
           </ul>
         </div>
       </div>

@@ -1,4 +1,6 @@
 import React, { useState, useRef } from "react";
+import Practice2 from "./Practice2";
+import Practice3 from "./Practice3";
 
 const Practice = () => {
   const [count, setCount] = useState(4);
@@ -26,6 +28,8 @@ const Practice = () => {
       <button onClick={decrementCount}>decrease</button>
       <span>{count}</span>
       <button onClick={incrementCount}>increase</button>
+      {/* <Practice2 /> */}
+      <Practice3/>
     </div>
   );
 };

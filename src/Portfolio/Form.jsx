@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Fade } from "react-reveal";
 
 const Form = () => {
   const [name, setName] = useState("");
@@ -59,6 +60,7 @@ const Form = () => {
       <section id="contact" className="w-full py-12 md:py-24 lg:py-32 bg-muted">
         <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6">
           <div className="space-y-3">
+            <Fade>
             <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">
               Get in Touch
             </h2>
@@ -66,6 +68,7 @@ const Form = () => {
               Have a project in mind or just want to say hello? Fill out the
               form below, and Rudra will get back to you as soon as possible.
             </p>
+            </Fade>
           </div>
           <div className="mx-auto w-full max-w-sm space-y-2">
             <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
