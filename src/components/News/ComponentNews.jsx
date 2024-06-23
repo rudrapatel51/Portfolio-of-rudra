@@ -5,14 +5,18 @@ import Intro from "../../Portfolio/Intro";
 import Skills from "../../Portfolio/Skills";
 import Form from "../../Portfolio/Form";
 import Practice3 from "../../practice/Practice3"
+import Name from "../../Portfolio/Name";
+import Education from "../../Portfolio/Education";
 
 export default function ComponentNews() {
   return (
     <div className="flex flex-col min-h-[100dvh]">
       <Navbar />
+      <Name/>
       <main className="flex-1">
         <Intro />
         <Skills />
+        <Education/>
         <Form />
       </main>
       {/* <Practice3/> */}

@@ -1,20 +1,25 @@
 import React from "react";
-import "./intro.css";
 import { Fade } from 'react-reveal';
+import { useTypewriter,Cursor } from "react-simple-typewriter";
 
 
 const Intro = () => {
+  const [text] = useTypewriter({
+    words: ['Frontend Devloper','React Devloper'],
+    loop:{},
+    typeSpeed:120,
+  })
   return (
     <>
       <section className="w-full py-12 md:py-24 lg:py-32">
         <div className="container grid items-center gap-6 px-4 md:px-6 lg:grid-cols-2 lg:gap-10">
           <div className="space-y-4">
             <Fade left>
-            <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
-              Rudra Patel
+            <h1 className="text-black text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
+            {text}<span><Cursor/></span>
             </h1>
-            <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl">
-              Frontend Developer
+            <h2 className="text-blue-700 text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl">
+              {/* {text}<span><Cursor/></span> */}
             </h2>
             <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
               Passionate about building beautiful and functional web
