@@ -1,9 +1,6 @@
 import React from "react";
 import { Fade } from 'react-reveal';
 import { useTypewriter,Cursor } from "react-simple-typewriter";
-import image from "../images/Untitled design (2).png";
-import image1 from "../images/Screenshot 2024-06-24 202245.png";
-import image2 from "../images/Untitled design (3).png"
 
 const Intro = () => {
   const [text] = useTypewriter({
@@ -82,7 +79,7 @@ const Intro = () => {
             <div className="flex flex-col gap-4">
               <Fade right>
               <img
-                src={image2}
+                src="/images/Untitled design (3).png"
                 width="550"
                 height="310"
                 alt="Project 1"
@@ -105,7 +102,7 @@ const Intro = () => {
             <div className="flex flex-col gap-4">
               <Fade left>
               <img
-                src={image}
+                src="/images/Untitled design (2).png"
                 width="550"
                 height="310"
                 alt="Project 2"
@@ -127,7 +124,7 @@ const Intro = () => {
             <div className="flex flex-col gap-4">
               <Fade right>
               <img
-                src={image1}
+                src="/images/Screenshot 2024-06-24 202245.png"
                 width="550"
                 height="310"
                 alt="Project 2"
