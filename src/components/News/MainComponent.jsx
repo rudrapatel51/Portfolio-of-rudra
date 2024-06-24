@@ -8,7 +8,7 @@ import Practice3 from "../../practice/Practice3"
 import Name from "../../Portfolio/Name";
 import Education from "../../Portfolio/Education";
 
-export default function ComponentNews() {
+export default function MainComponent() {
   return (
     <div className="flex flex-col min-h-[100dvh]">
       <Navbar />

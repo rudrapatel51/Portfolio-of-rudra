@@ -1,7 +1,9 @@
 import React from "react";
 import { Fade } from 'react-reveal';
 import { useTypewriter,Cursor } from "react-simple-typewriter";
-
+import image from "../images/Untitled design (2).png";
+import image1 from "../images/Screenshot 2024-06-24 202245.png";
+import image2 from "../images/Untitled design (3).png"
 
 const Intro = () => {
   const [text] = useTypewriter({
@@ -58,11 +60,11 @@ const Intro = () => {
               <Fade left>
             <div className="flex flex-col gap-4">
               <img
-                src="https://images.pexels.com/photos/1972464/pexels-photo-1972464.jpeg?auto=compress&cs=tinysrgb&w=600"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRVW43aNKZkW4COwSYW9oV-7VAlLc-V2VW-A&s"
                 width="550"
                 height="310"
                 alt="Project 1"
-                className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full"
+                className="mx-auto aspect-video overflow-hidden rounded-xl object-fit object-center sm:w-full"
               />
               <div className="space-y-2">
                 <h3 className="text-2xl font-bold">Ecommerce Website</h3>
@@ -80,11 +82,11 @@ const Intro = () => {
             <div className="flex flex-col gap-4">
               <Fade right>
               <img
-                src="https://images.pexels.com/photos/1972464/pexels-photo-1972464.jpeg?auto=compress&cs=tinysrgb&w=600"
+                src={image2}
                 width="550"
                 height="310"
                 alt="Project 1"
-                className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full"
+                className="mx-auto aspect-video overflow-hidden rounded-xl object-fit object-center sm:w-full"
               />
               <div className="space-y-2">
                 <h3 className="text-2xl font-bold">Prompt Engineering</h3>
@@ -103,11 +105,11 @@ const Intro = () => {
             <div className="flex flex-col gap-4">
               <Fade left>
               <img
-                src="https://images.pexels.com/photos/1972464/pexels-photo-1972464.jpeg?auto=compress&cs=tinysrgb&w=600"
+                src={image}
                 width="550"
                 height="310"
                 alt="Project 2"
-                className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full"
+                className="mx-auto aspect-video overflow-hidden rounded-xl object-fit object-center sm:w-full"
               />
               <div className="space-y-2">
                 <h3 className="text-2xl font-bold">Basic Blog Page Website</h3>
@@ -125,11 +127,11 @@ const Intro = () => {
             <div className="flex flex-col gap-4">
               <Fade right>
               <img
-                src="https://images.pexels.com/photos/1972464/pexels-photo-1972464.jpeg?auto=compress&cs=tinysrgb&w=600"
+                src={image1}
                 width="550"
                 height="310"
                 alt="Project 2"
-                className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full"
+                className="mx-auto aspect-video overflow-hidden rounded-xl object-fit object-center sm:w-full"
               />
               <div className="space-y-2">
                 <h3 className="text-2xl font-bold">Effortless Persian Club</h3>

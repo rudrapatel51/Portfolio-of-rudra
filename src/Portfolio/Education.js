@@ -19,9 +19,11 @@ const Education = () => {
                 } className="text-xl font-bold">10th Class</h3>
                 <Fade>
                 {show[0] && (
-              <p className="text-muted-foreground">
+              <p className="text-muted-foreground text-center">
                 St thomas english meduim school,surat.
+                <br/>
                 2021
+                <br/>
                 64%
               </p>
                 )}
@@ -31,9 +33,11 @@ const Education = () => {
               <h3 onClick={() => handleClick(1)} className="text-xl font-bold">12th Class</h3>
               <Fade>
               {show[1] && (
-              <p className="text-muted-foreground">
+              <p className="text-muted-foreground text-center">
               St thomas english meduim school,surat.
+              <br/>
                 2023
+              <br/>
                 74%
               </p>
               )}
@@ -45,7 +49,9 @@ const Education = () => {
               {show[2] && (
               <p className="text-muted-foreground">
                 Gandhinagar University
+                <br/>
                 2023-2026
+                <br/>
                 Second Year(pursuing)
               </p>
               )}
