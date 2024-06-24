@@ -1,17 +1,21 @@
-// import React, { useCallback, useState } from 'react'
-// import Practice from './practice';
+import React from 'react'
 
-// const Practice7 = () => {
-// const [number,setNumber] = useState(1);
-//   const getItem = useCallback((incrementor) => {
-//     return [number + 1 +incrementor,number+2+incrementor]
-//   },[number])
-//     return (
-//     <div>
-//       <input type='number' value={number} onChange={e => setNumber(parseInt(e.target.value))}/>
-//       <Practice getItem={getItem}/>
-//     </div>
-//   )
-// }
+const Practice7 = () => {
+    function reducer(state,action) {
+        switch (action.type){
+            case 'increment' :
+                return {count : state.count + 1}
+            case 'decrement' :
+                return {count : state.count - 1}
+            default :
+            return state
+        }
+    }
+  return (
+    <div>
+       <button onLC></button>
+    </div>
+  )
+}
 
-// export default Practice7
+export default Practice7

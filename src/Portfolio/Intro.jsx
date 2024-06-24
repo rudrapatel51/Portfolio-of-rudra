@@ -22,8 +22,7 @@ const Intro = () => {
               {/* {text}<span><Cursor/></span> */}
             </h2>
             <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Passionate about building beautiful and functional web
-              applications. Specializing in React, JavaScript, and Tailwind CSS.
+            I am very passionate in frontend development and make responsive design using html,css and javascript and also working with libraries of js like React.js and libraries of css like tailwind and bootstrap and make complex components and state managers and use different types of hook in react.js and know Rest api to fetch in react.js to see data in frontend and use redux ,reducer,usecontext api in react.js functionality.
             </p>
             </Fade>
           </div>

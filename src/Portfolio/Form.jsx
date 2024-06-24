@@ -76,7 +76,7 @@ const Form = () => {
                 id="name"
                 type="text"
                 placeholder="Name"
-                className="max-w-lg flex-1"
+                className="bg-gray-800 border border-gray-300 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-white dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
               />
@@ -84,14 +84,14 @@ const Form = () => {
                 id="email"
                 type="email"
                 placeholder="Email"
-                className="max-w-lg flex-1"
+                className="bg-gray-800 border border-gray-300 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-white dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
               <textarea
                 id="message"
                 placeholder="Message"
-                className="max-w-lg flex-1"
+                className="bg-gray-800 border border-gray-300 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-white dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
               ></textarea>
