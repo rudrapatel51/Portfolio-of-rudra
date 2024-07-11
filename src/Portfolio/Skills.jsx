@@ -64,7 +64,7 @@ const Skills = () => {
           </div>
           <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-3 lg:gap-12">
             <div className="flex flex-col gap-2 items-center hover:bg-gray-200 rounded-xl">
-              <Bounce top duration={1000} delay={1000}>
+              <Bounce top duration={1000}>
               <CodepenIcon className="h-12 w-12" />
               <h3 className="text-xl font-bold">React</h3>
               <p className="text-muted-foreground">
@@ -74,7 +74,7 @@ const Skills = () => {
               </Bounce>
             </div>
             <div className="flex flex-col gap-2 items-center hover:bg-gray-200 rounded-xl">
-            <Bounce top duration={1000} delay={1000}>
+            <Bounce top duration={1000}>
               <EclipseIcon className="h-12 w-12" />
               <h3 className="text-xl font-bold">JavaScript</h3>
               <p className="text-muted-foreground">
@@ -84,7 +84,7 @@ const Skills = () => {
             </Bounce>
             </div>
             <div className="flex flex-col gap-2 items-center hover:bg-gray-200 rounded-xl">
-            <Bounce top duration={1000} delay={1000}>
+            <Bounce top duration={1000} >
               <IoLogoCss3 size={50} />
               <h3 className="text-xl font-bold">CSS</h3>
               <p className="text-muted-foreground">
@@ -94,7 +94,7 @@ const Skills = () => {
               </Bounce>
             </div>
             <div className="flex flex-col gap-2 items-center hover:bg-gray-200 rounded-xl">
-              <Bounce left duration={1000} delay={1500}>
+              <Bounce left duration={1000} >
               <SiHtml5 size={50} />
               <h3 className="text-xl font-bold">HTML</h3>
               <p className="text-muted-foreground">
@@ -104,7 +104,7 @@ const Skills = () => {
               </Bounce>
             </div>
             <div className="flex flex-col gap-2 items-center hover:bg-gray-200 rounded-xl">
-            <Bounce right duration={1000} delay={1500}>
+            <Bounce right duration={1000}   >
               <BiLogoPostgresql size={50} />
 
               <h3 className="text-xl font-bold">SQL</h3>

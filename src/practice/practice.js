@@ -1,5 +1,4 @@
 import React, { useState, useRef, useEffect } from "react";
-import Practice2 from "./Practice2";
 import Practice3 from "./Practice3";
 import Practice7 from "./Practice7";
 
