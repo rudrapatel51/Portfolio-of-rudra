@@ -4,30 +4,33 @@ import Navbar from "../../Portfolio/Navbar";
 import Intro from "../../Portfolio/Intro";
 import Skills from "../../Portfolio/Skills";
 import Form from "../../Portfolio/Form";
-import Practice3 from "../../practice/Practice3"
 import Name from "../../Portfolio/Name";
 import Education from "../../Portfolio/Education";
+import Loader from "../../loader/Loader";
 
 export default function MainComponent() {
   return (
-    <div className="flex flex-col min-h-[100dvh]">
-      <Navbar />
-      <Name/>
-      <main className="flex-1">
-        <Intro />
-        <Skills />
-        <Education/>
-        <Form />
-      </main>
-      {/* <Practice3/> */}
-      <footer className="w-full bg-gray-800 py-6">
-        <div className="container px-4 text-center md:px-6">
-          <p className="text-sm text-gray-400">
-            © {new Date().getFullYear()} Rudra. All rights reserved.
-          </p>
-        </div>
-      </footer>
-    </div>
+    <>
+      <Loader />
+      <div className="flex flex-col min-h-[100dvh]">
+        <Navbar />
+        <Name />
+        <main className="flex-1">
+          <Intro />
+          <Skills />
+          <Education />
+          <Form />
+        </main>
+        {/* <Practice3/> */}
+        <footer className="w-full bg-gray-800 py-6">
+          <div className="container px-4 text-center md:px-6">
+            <p className="text-sm text-gray-400">
+              © {new Date().getFullYear()} Rudra. All rights reserved.
+            </p>
+          </div>
+        </footer>
+      </div>
+    </>
   );
 }
 
