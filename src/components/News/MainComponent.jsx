@@ -7,6 +7,7 @@ import Form from "../../Portfolio/Form";
 import Name from "../../Portfolio/Name";
 import Education from "../../Portfolio/Education";
 import Loader from "../../loader/Loader";
+import Projects from "../../Portfolio/Projects";
 
 export default function MainComponent() {
   return (
@@ -17,6 +18,7 @@ export default function MainComponent() {
         <Name />
         <main className="flex-1">
           <Intro />
+          <Projects/>
           <Skills />
           <Education />
           <Form />
