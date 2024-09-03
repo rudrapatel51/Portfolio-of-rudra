@@ -134,20 +134,20 @@ const Projects = () => {
             <Fade right>
               <div className="flex flex-col gap-4">
                 <img
-                  src="/images/travel.png"
+                  src="/images/image.png"
                   width="550"
                   height="310"
                   alt="Project 1"
                   className="mx-auto aspect-video overflow-hidden rounded-xl object-fit object-center sm:w-full"
                 />
                 <div className="space-y-2">
-                  <h3 className="text-2xl font-bold">Travel Website</h3>
-                  <a href="https://travel-with-us-rudrapatel51s-projects.vercel.app/">
-                    <h3 className="text-2xl font-bold">Travel With Us</h3>
+                  <h3 className="text-2xl font-bold">College Orientation</h3>
+                  <a href="https://orientation-gu.vercel.app/">
+                    <h3 className="text-2xl font-bold">Orientation Qr Scanning</h3>
                   </a>
                   <p className="text-muted-foreground">
-                    This website is made for travel company to see there mostly 
-                    visited places and all tours plans that company have and on going discount of the companys
+                    This website is made to collect the data of student who have been present and in that it generate the qrcode 
+                    by enterning details and after that when student come with qrcode the faculty have to scan that student exists or not. 
                   </p>
                 </div>
               </div>
